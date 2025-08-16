@@ -28,4 +28,10 @@ config.resolver.unstable_conditionNames = ["require", "default", "browser"]
 // such as Firebase that use the extension cjs.
 config.resolver.sourceExts.push("cjs")
 
+// Add path aliases to match tsconfig.json
+config.resolver.alias = {
+  "@": "./app",
+  "@assets": "./assets",
+}
+
 module.exports = config
